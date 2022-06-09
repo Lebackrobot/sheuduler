@@ -23,7 +23,7 @@ class sheuduler {
         }
     }
 
-    forPriorities() {
+    byPriorities() {
         this.#sortByTicket()
 
         //send process to  cpu
@@ -36,7 +36,7 @@ class sheuduler {
     }
 
     //super important methods
-    forTicket() {
+    byTicket() {
         this.#swap(0, this.#getTicketIndex())
         this.processes.push(cpu.run(this.processes.shift()))
     }
