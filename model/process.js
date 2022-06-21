@@ -1,10 +1,14 @@
-export class process {
-    constructor(name, time, memory, ticket, pid, uid) {
+class Process {
+    constructor(name, pid, time, ticket, memory, uid) {
         this.name = name
         this.pid = pid
-        this.uid = uid
+        this.time = time
         this.ticket = ticket
         this.memory = memory
-        this.time = time
+        this.uid = uid
+
+        this._time = time
     }
 }
+
+module.exports = Process
